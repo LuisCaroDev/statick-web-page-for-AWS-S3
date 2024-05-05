@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome to my web page stored on AWS S3</title>
+</head>
+<body class="w-full min-h-[100dvh] flex flex-col items-center relavite">
+    <header class="w-full flex justify-center sticky top-0 bg-white dark:bg-black z-10">
+        <nav class="w-full flex justify-between max-w-3xl p-2">
+            <a class="font-bold text-black dark:text-white" href="/">Logo</a>
+            <ul class="flex gap-4">
+                <li>
+                    <a class="cursor-pointer hover:text-green-600 text-black dark:text-white" href="#about">About us</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer hover:text-green-600 text-black dark:text-white" href="#contact">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="w-full flex justify-center items-center flex-col flex-1 min-h-80 px-4 max-auto sm:px-[max(1rem_,_calc(calc(100%_-_768px)/2))] py-4 bg-white dark:bg-black">
+        <h1 class="text-3xl font-bold underline uppercase text-center text-black dark:text-white">My Web page stored on S3</h1>
+        <p class="text-center text-black dark:text-white">this is an example of a static web page hosted on S3</p>
+    </main>
+    <section class="w-full flex flex-col gap-2 bg-slate-50 dark:bg-slate-900 px-4 max-auto sm:px-[max(1rem_,_calc(calc(100%_-_768px)/2))] pt-4 pb-6">
+        <h2 class="text-2xl font-bold text-black dark:text-white">Services</h2>
+        <section class="w-full">
+            <ul class="w-full grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <li class="bg-slate-300 aspect-square group relative overflow-hidden cursor-pointer">
+                    <div class="w-full absolute -bottom-10 group-hover:bottom-0 duration-200 bg-white dark:bg-black px-4 py-2">
+                        <p class="text-black dark:text-white">
+                            Service 1
+                        </p>
+                    </div>
+                </li>
+                <li class="bg-slate-300 aspect-square group relative overflow-hidden cursor-pointer">
+                    <div class="w-full absolute -bottom-10 group-hover:bottom-0 duration-200 bg-white dark:bg-black px-4 py-2">
+                        <p class="text-black dark:text-white">
+                            Service 2
+                        </p>
+                    </div>
+                </li>
+                <li class="bg-slate-300 aspect-square group relative overflow-hidden cursor-pointer">
+                    <div class="w-full absolute -bottom-10 group-hover:bottom-0 duration-200 bg-white dark:bg-black px-4 py-2">
+                        <p class="text-black dark:text-white">
+                            Service 3
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section class="w-full flex flex-col gap-2 bg-white dark:bg-black px-4 max-auto sm:px-[max(1rem_,_calc(calc(100%_-_768px)/2))] pt-4 pb-6">
+        <h2 class="text-2xl font-bold text-black dark:text-white">Testimonials</h2>
+        <ul class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <li class="flex flex-col gap-2 bg-slate-50 dark:bg-slate-900 p-4 rounded border dark:border-slate-600">
+                <p class="text-black dark:text-white line-clamp-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores nobis exercitationem soluta dolorem, ullam molestias, minima sed deserunt aperiam veritatis veniam. Quasi, sapiente. Asperiores quaerat placeat tenetur qui laborum.
+                Obcaecati natus at quod ipsam alias totam nihil voluptates. Iure porro voluptas expedita ipsa minus vero pariatur labore a aspernatur dolorem nobis, consequatur nulla veritatis, neque, officia recusandae eveniet explicabo.
+                Error labore cupiditate accusamus perferendis doloribus nihil adipisci. Libero, tempore qui eius odit vitae nisi inventore amet similique cupiditate, facilis alias! Hic deleniti recusandae repellat ipsum itaque magni asperiores quasi!</p>
+                <div>
+                    <div class="rounded aspect-square bg-green-500 w-6"></div>
+                    <p class="text-black dark:text-white">Jhon Doe</p>
+                </div>
+            </li>
+            <li class="flex flex-col gap-2 bg-slate-50 dark:bg-slate-900 p-4 rounded border dark:border-slate-600">
+                <p class="text-black dark:text-white line-clamp-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores nobis exercitationem soluta dolorem, ullam molestias, minima sed deserunt aperiam veritatis veniam. Quasi, sapiente. Asperiores quaerat placeat tenetur qui laborum.
+                Obcaecati natus at quod ipsam alias totam nihil voluptates. Iure porro voluptas expedita ipsa minus vero pariatur labore a aspernatur dolorem nobis, consequatur nulla veritatis, neque, officia recusandae eveniet explicabo.
+                Error labore cupiditate accusamus perferendis doloribus nihil adipisci. Libero, tempore qui eius odit vitae nisi inventore amet similique cupiditate, facilis alias! Hic deleniti recusandae repellat ipsum itaque magni asperiores quasi!</p>
+                <div>
+                    <div class="rounded aspect-square bg-green-500 w-6"></div>
+                    <p class="text-black dark:text-white">Jhon Doe</p>
+                </div>
+            </li>
+            <li class="flex flex-col gap-2 bg-slate-50 dark:bg-slate-900 p-4 rounded border dark:border-slate-600">
+                <p class="text-black dark:text-white line-clamp-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro eaque corrupti tenetur culpa nam voluptate eum a sint tempore necessitatibus doloribus accusamus, perspiciatis dolor officiis minima veniam sed eveniet recusandae.
+                Incidunt corporis minima natus provident itaque sit cum explicabo impedit iste quidem aspernatur doloremque dignissimos, nam debitis quo exercitationem, atque eligendi porro. Saepe nisi dolor officia nemo nobis reprehenderit ipsa!
+                Ipsa dicta error, tempore neque dolor deleniti amet mollitia, cumque cum est laborum vero aliquid animi explicabo aperiam at, labore nemo ab ad nesciunt pariatur placeat molestias. Rerum, error debitis?
+                Tempore explicabo reprehenderit sint amet similique eligendi ipsa error perferendis! Enim magni hic minus. Corrupti vel debitis totam repellat, dolorem eveniet eos explicabo accusantium minus inventore sequi delectus dignissimos illum.</p>
+                <div>
+                    <div class="rounded aspect-square bg-green-500 w-6"></div>
+                    <p class="text-black dark:text-white">Jhon Doe</p>
+                </div>
+            </li>
+            <li class="flex flex-col gap-2 bg-slate-50 dark:bg-slate-900 p-4 rounded border dark:border-slate-600">
+                <p class="text-black dark:text-white line-clamp-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem. Nemo rerum consequatur nesciunt obcaecati, aperiam reprehenderit, dolor aut maiores consequuntur iste, accusantium ipsum corporis ipsam illo eaque atque similique.
+                Fugit exercitationem hic nihil repellendus quam nisi! Eaque qui et nam culpa consequuntur quaerat, dolorum quasi pariatur voluptates, reprehenderit error placeat amet facere assumenda, cum harum architecto modi laboriosam provident.</p>
+                <div>
+                    <div class="rounded aspect-square bg-green-500 w-6"></div>
+                    <p class="text-black dark:text-white">Jhon Doe</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="w-full flex flex-col gap-2 px-4 bg-white dark:bg-black max-auto sm:px-[max(1rem_,_calc(calc(100%_-_768px)/2))] pt-4 pb-8">
+        <p class="text-black dark:text-white">Copyright © 2024 </p>
+    </footer>
+</body>
+</html>

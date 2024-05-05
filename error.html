@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Error Page</title>
+</head>
+<body class="w-full flex flex-col min-h-[100dvh]">
+    <header class="w-full flex justify-center sticky top-0 bg-white dark:bg-black z-10">
+        <nav class="w-full flex justify-between max-w-3xl p-2">
+            <a class="font-bold text-black dark:text-white" href="/">Logo</a>
+            <ul class="flex gap-4">
+                <li class="cursor-pointer hover:text-green-600 text-black dark:text-white">About us</li>
+                <li class="cursor-pointer hover:text-green-600 text-black dark:text-white">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="w-full flex flex-col gap-2 items-center justify-center flex-1 min-h-40 bg-gray-200 px-4 max-auto sm:px-[max(1rem_,_calc(calc(100%_-_768px)/2))] py-4 bg-slate-50 dark:bg-slate-900">
+        <h2 class="text-2xl font-bold text-black dark:text-white">Error 404</h2>
+        <p class="text-black dark:text-white">page not found</p>
+    </section>
+    <footer class="w-full flex flex-col gap-2 px-4 bg-white dark:bg-black max-auto sm:px-[max(1rem_,_calc(calc(100%_-_768px)/2))] pt-4 pb-8">
+        <p class="text-black dark:text-white">Copyright © 2024 </p>
+    </footer>
+</body>
+</html>
